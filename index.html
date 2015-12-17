@@ -1,1 +1,32 @@
-hello, Shred
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery loader</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="icon" type="image/gif" href="data:image/gif;base64,R0lGODlhAQABAPABAP///wAAACH5BAEKAAAALAAAAAABAAEAAAICRAEAOw" />
+	
+	<link href="style.css" rel="stylesheet">
+	
+	<script src="js/third_party/jquery-1.11.0.js"></script>
+
+	<script src="js/application.js"></script>
+	<script src="js/download_manager.js"></script>
+	<script src="js/async_loader.js"></script>
+</head>
+<body>
+	<div class='text'>
+		При нажатии на 'Начать загрузку' запускается загрузка картинок.<br>
+		'Пауза' останавливает и возобновляет загрузку.
+	</div>
+	<button id='downloadButton'>Начать загрузку</button>	
+	<button id='pauseButton'>Пауза</button>	
+	<br>
+
+    <script>
+		$( document ).ready(function() {
+	    	var app = new Application();
+		});
+    </script>
+</body>
+</html>
